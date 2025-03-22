@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('download.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.header {
+    background-color: #2f6c7c;
+    color: #b7d1da; 
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 30px auto;
+    width: 85%;
+    background: rgba(183, 209, 218, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+h2 {
+    color: #2f6c7c;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.exam-table {
+    width: 100%;
+    max-width: 800px; 
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Khoảng cách giữa ảnh và chữ */
+}
+
+.image-wrapper img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-caption {
+    font-size: 15px;
+    color: #666;
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.text-content {
+    flex: 2;
+    text-align: left;
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: #293339;
+    padding: 10px 0;
+    background-color: #b9d9e7;
+    width: 100%;
+}
+
+.main-container {
+    margin: 20px auto;
+    width: 80%;
+    background: #b7d1da;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.main-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-wrapper img {
+        width: 100%; 
+        margin: 0 0 15px 0; 
+    }
+}
